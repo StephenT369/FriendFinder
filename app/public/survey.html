@@ -149,13 +149,36 @@
                           <option value="5">5 (Strongly Agree)</option>
                         </select>
                         <br>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block submit" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
                             Submit</button>
                     </div>
       
       </form></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <script src="./assets/javaScript/form.js"></script>
+    <div id="show-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="modal-name"></h2>
+            <img id="modal-image" >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <footer class="footer"><div class=container>
+      <p><a href="/">Home</a> | <a href="/api/friends" target="_blank">API Frienders Lister!(JSON)</a> | <a href="https://github.com/StephenT369/FriendFinder" target="_blank">REPO</a></p>
+  </div></footer>
+  </body>
 </html>

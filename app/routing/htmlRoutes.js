@@ -9,4 +9,8 @@ module.exports = function(app) {
     app.get('/', function(req, res) {
       res.sendFile(path.join(__dirname, '../public/home.html'));
     });
+
+    app.get('/assets/javaScript/form.js', function(req, res) {
+      res.sendFile(path.join(__dirname, '../public/assets/javaScript/form.js'));
+    });
   };
