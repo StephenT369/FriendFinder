@@ -21,6 +21,7 @@ $('.submit').on('click', function(event){
     $.post('/api/friends', newFriend, function(data){
         $('#modal-name').text(data.Name);
         $('#modal-image').attr('src', data.Pic);
+        $('#modal-image').attr('width', 460);
         $('#show-modal').modal('toggle');
         console.log(data.photo);
     });
